@@ -32,10 +32,10 @@ function decreaseTime(element){
 function resetTimer(element){
     stopTimer(element)
     element.innerHTML = element.currentTime
+    element.started = false
 }
 
 function stopTimer(element){
     clearInterval(element.interval)
-    element.started = false
     element.currentTime = 90
 }
